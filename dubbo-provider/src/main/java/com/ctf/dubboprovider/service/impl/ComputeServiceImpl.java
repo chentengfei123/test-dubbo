@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 public class ComputeServiceImpl implements ComputeService {
 
     public Integer compute(int a ,int b ){
+        System.out.println("正在计算");
         return a+b;
     }
 }

@@ -15,6 +15,7 @@ public class ConsumerController {
 
     @RequestMapping(value = "consume",method = RequestMethod.GET)
     public Object consume(){
+        System.out.println("正在执行");
         return computeService.compute(1,2);
     }
 }
