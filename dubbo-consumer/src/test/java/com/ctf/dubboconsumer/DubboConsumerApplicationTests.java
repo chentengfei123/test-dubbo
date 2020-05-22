@@ -40,8 +40,7 @@ class DubboConsumerApplicationTests {
         extensionLoader.getExtension("imp2").sayH();
     }
 
-//    private Protocol protocol = ExtensionLoader.getExtensionLoader(DubboProtocol.class).getAdaptiveExtension();
-    private Protocol protocol = new DubboProtocol();
+    private Protocol protocol = ExtensionLoader.getExtensionLoader(Protocol.class).getAdaptiveExtension();
     private ProxyFactory proxy = ExtensionLoader.getExtensionLoader(ProxyFactory.class).getAdaptiveExtension();
 
     /**
