@@ -12,4 +12,9 @@ public class ComputeServiceImpl implements ComputeService {
         System.out.println("正在计算");
         return a+b;
     }
+
+    public Object count(int a , int b){
+        System.out.println("正在求和");
+        return 100;
+    }
 }
